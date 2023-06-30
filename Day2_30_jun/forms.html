@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Let's learn Form</h1>
+
+    <form >
+      <div>
+        <label for="username"> Name<sup>*</sup> </label>
+        <input required name="name" id="username" />
+      </div>
+      <div>
+        <label for="user_email"> Email<sup>*</sup> </label>
+        <input required name="email" type="email" id="user_email" />
+      </div>
+      <div>
+        <label for="user_password"> Password<sup>*</sup> </label>
+        <input required name="password" type="password" id="user_password" />
+      </div>
+      <div>
+        <label for="phoneNumber"> Phone<sup>*</sup> </label>
+        <input required name="phone" maxlength="10" type="tel" id="phoneNumber" />
+      </div>
+      <div>
+        <label for="age"> Age </label>
+        <input name="age" max="100" min="0" type="number" id="age" />
+      </div>
+      <div>
+        <span> Gender </span>
+        <label for="male"> Male </label>
+        <input name="gender" id="male" type="radio" />
+        <label for="female"> Female </label>
+        <input name="gender" id="female" type="radio" />
+        <label for="others"> Other </label>
+        <input name="gender" id="others" type="radio" />
+      </div>
+      <div>
+        <label> States </label>
+        <select name="states">
+          <option disabled value="" selected>Select your state</option>
+          <optgroup label="North States">
+            <option value="up">Uttar Pradesh</option>
+            <option value="hp">Himachal Pradesh</option>
+            <option value="jk">Jammu</option>
+            <option value="pn">Punjab</option>
+          </optgroup>
+          <optgroup label="South States">
+            <option value="tn">Tamil Nadu</option>
+            <option value="go">Goa</option>
+          </optgroup>
+          <optgroup label="East States">
+            <option value="as">Assam</option>
+          </optgroup>
+          <optgroup label="West States">
+            <option value="rj">Rajasthan</option>
+            <option value="gj">Gujrat</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <input id="terms" name="terms" type="checkbox" />
+        <label for="terms"> I am agree with terms & conditions </label>
+      </div>
+      <button>Submit</button>
+      <!-- <input type="submit"/> -->
+    </form>
+  </body>
+</html>
