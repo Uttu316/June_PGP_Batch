@@ -6,14 +6,20 @@
   <body>
     <h1>Let's learn Form</h1>
 
-    <form >
+    <form>
       <div>
         <label for="username"> Name<sup>*</sup> </label>
-        <input required name="name" id="username" />
+        <input placeholder="Enter Name" required name="name" id="username" />
       </div>
       <div>
         <label for="user_email"> Email<sup>*</sup> </label>
-        <input required name="email" type="email" id="user_email" />
+        <input
+          placeholder="Enter email"
+          required
+          name="email"
+          type="email"
+          id="user_email"
+        />
       </div>
       <div>
         <label for="user_password"> Password<sup>*</sup> </label>
@@ -21,7 +27,13 @@
       </div>
       <div>
         <label for="phoneNumber"> Phone<sup>*</sup> </label>
-        <input required name="phone" maxlength="10" type="tel" id="phoneNumber" />
+        <input
+          required
+          name="phone"
+          maxlength="10"
+          type="tel"
+          id="phoneNumber"
+        />
       </div>
       <div>
         <label for="age"> Age </label>
@@ -58,6 +70,10 @@
             <option value="gj">Gujrat</option>
           </optgroup>
         </select>
+      </div>
+      <div>
+        <label for="message"> Message </label>
+        <textarea placeholder="Enter your message here..." rows="5"></textarea>
       </div>
       <div>
         <input id="terms" name="terms" type="checkbox" />
