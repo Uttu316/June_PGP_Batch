@@ -1,0 +1,77 @@
+/* Specificity(priority): Inline Styles > Internal Styles > External Styles */
+* {
+  margin: 0px;
+}
+
+h1 {
+  color: green;
+}
+
+/* Element Selector: select all given tag in this html  */
+div {
+  /* margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px; */
+
+  /* margin: 20px 10px 20px 10px; */
+
+  /* margin:20px 10px ; */
+  margin: 20px;
+
+  padding: 10px;
+}
+
+/* . class selector: select all elements which has given class */
+.box {
+  color: red;
+
+  border: 1px solid blue;
+}
+.square {
+  height: 400px;
+  width: 400px;
+}
+
+.rectangle {
+  height: 400px;
+  width: 800px;
+}
+
+/* # ID selector: select an element which has given id */
+#about_section {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 20px;
+  line-height: 40px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Inline Styles >ID> Internal Styles > External Styles */
+
+/* combinators/ selectors */
+
+/* Descendant: select targeted child elements inside given parent */
+/* #section p {
+  color: pink;
+} */
+
+/* Child: select direct targeted child elements inside given parent */
+/* #section > p {
+  color: blue;
+} */
+
+/* Adjacent Sibling Selector: select a targeted sibling element immediately next of given sibling  */
+
+/* .text-1 + p {
+  color: brown;
+} */
+
+/* General Sibling Selector: select all targeted sibling elements after given sibling */
+
+#section .text-2 ~ p {
+  color: green;
+}
