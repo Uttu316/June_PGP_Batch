@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box</title>
+    <style>
+      .container {
+        display: flex;
+        padding: 40px;
+        border: 2px solid brown;
+        flex-direction: row;
+
+        /* flex-wrap: wrap; */
+        gap: 20px;
+
+        /*
+            Works on Main Axis
+
+            justify-content: center;
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content:space-between;
+            justify-content:space-around;
+            justify-content:space-evenly;
+        */
+        /*
+            Works on Cross Axis
+
+            align-items: center;
+            align-items: flex-start;
+            align-items: flex-end;
+             align-items: strech;
+
+            
+        */
+      }
+      .item {
+        padding: 40px;
+        background-color: gold;
+        /* width: 100px; */
+        flex-basis: 200px;
+        /* flex-grow:1 */
+
+
+
+        /* flex: 1 1 200px; */
+        
+      }
+
+      #itemB{
+        flex-shrink: 0;
+      }
+      #itemC{
+        flex-shrink: 1;
+      }
+      #itemD{
+        flex-shrink: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" id="itemA">A</div>
+      <div class="item" id="itemB">B</div>
+      <div class="item" id="itemC">C</div>
+      <div class="item" id="itemD">D</div>
+      <!-- <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div> -->
+    </div>
+  </body>
+</html>
