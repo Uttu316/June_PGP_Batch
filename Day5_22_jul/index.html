@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      .container {
+        border: 2px solid brown;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(200px, 400px));
+        /* grid-template-rows: repeat(3, 200px); */
+        gap: 20px;
+        padding: 20px;
+      }
+      .grid-item {
+        background-color: gold;
+        font-size: 20px;
+        padding: 80px;
+      }
+      #A {
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+      #D {
+        grid-column-start: 2;
+        grid-column-end: -1;
+      }
+      #J {
+        grid-row-start: 3;
+        grid-row-end: 5;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="grid-item" id="A">A</div>
+      <div class="grid-item">B</div>
+      <div class="grid-item">C</div>
+      <div class="grid-item" id="D">D</div>
+      <div class="grid-item">E</div>
+      <div class="grid-item">F</div>
+      <div class="grid-item">G</div>
+      <div class="grid-item">H</div>
+      <div class="grid-item">I</div>
+      <div class="grid-item" id="J">J</div>
+      <div class="grid-item">K</div>
+      <div class="grid-item">L</div>
+    </div>
+  </body>
+</html>
