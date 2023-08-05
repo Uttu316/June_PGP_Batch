@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link href="./todoStyles.css" rel="stylesheet"/>
+</head>
+<body>
+    <section class="list-wrapper">   
+    <h1>
+        Task List
+    </h1>
+   
+    <form  id="task_form">
+        <input placeholder="Enter your task" id="task_msg" name="task" />
+        <button id="add_task_btn" >
+            Add Task
+        </button>
+    </form>
+   
+
+    <div class="list-container">
+        <ol id="list-container-tasks">
+
+        </ol>
+    </div>
+    
+</section>
+
+<script src="./todoScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.list-container{
+    
+    margin: 40px auto;
+    border: 2px solid brown;
+    border-radius: 8px;
+    padding: 40px;
+}
+.list-wrapper{
+    margin: 0 auto;
+    width: 500px;
+}

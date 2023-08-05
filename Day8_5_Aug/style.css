@@ -1,0 +1,10 @@
+.student_list_item{
+    background-color: green;
+    margin-bottom: 10px;
+}
+.active{
+    background-color: greenyellow;
+}
+.disable{
+    background-color: gray;
+}
